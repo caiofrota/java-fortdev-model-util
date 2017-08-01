@@ -10,12 +10,14 @@
 
 	<!-- Versions -->
 	<properties>
-		<springframework.version>4.1.9.RELEASE</springframework.version>
-		<hibernate.version>4.3.6.Final</hibernate.version>
-		<hsqldb.version>2.4.0</hsqldb.version>
-		<log4j.version>1.2.15</log4j.version>
-		<commons-dbcp.version>1.4</commons-dbcp.version>
-		<junit.version>4.12</junit.version>
+		<version.java>1.8</version.java>
+		<version.maven-compiler-plugin>3.1</version.maven-compiler-plugin>
+		<version.springframework>4.1.9.RELEASE</version.springframework>
+		<version.hibernate>4.3.6.Final</version.hibernate>
+		<version.hsqldb>2.4.0</version.hsqldb>
+		<version.log4j>1.2.15</version.log4j>
+		<version.commons-dbcp>1.4</version.commons-dbcp>
+		<version.junit>4.12</version.junit>
 	</properties>
 
 	<dependencies>
@@ -23,32 +25,32 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>${springframework.version}</version>
+			<version>${version.springframework}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-web</artifactId>
-			<version>${springframework.version}</version>
+			<version>${version.springframework}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
-			<version>${springframework.version}</version>
+			<version>${version.springframework}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
-			<version>${springframework.version}</version>
+			<version>${version.springframework}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-orm</artifactId>
-			<version>${springframework.version}</version>
+			<version>${version.springframework}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-test</artifactId>
-			<version>${springframework.version}</version>
+			<version>${version.springframework}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -56,19 +58,19 @@
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
-			<version>${hibernate.version}</version>
+			<version>${version.hibernate}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-entitymanager</artifactId>
-			<version>${hibernate.version}</version>
+			<version>${version.hibernate}</version>
 		</dependency>
 
 		<!-- HSQLDB -->
 		<dependency>
 			<groupId>org.hsqldb</groupId>
 			<artifactId>hsqldb</artifactId>
-			<version>${hsqldb.version}</version>
+			<version>${version.hsqldb}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -76,7 +78,7 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>${log4j.version}</version>
+			<version>${version.log4j}</version>
 			<exclusions>
 				<exclusion>
 					<groupId>javax.mail</groupId>
@@ -101,7 +103,7 @@
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
-			<version>${commons-dbcp.version}</version>
+			<version>${version.commons-dbcp}</version>
 		</dependency>
 
 
@@ -109,7 +111,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>${junit.version}</version>
+			<version>${version.junit}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -121,10 +123,10 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.1</version>
+					<version>${version.maven-compiler-plugin}</version>
 					<configuration>
-						<source>1.8</source>
-						<target>1.8</target>
+						<source>${version.java}</source>
+						<target>${version.java}</target>
 					</configuration>
 				</plugin>
 			</plugins>

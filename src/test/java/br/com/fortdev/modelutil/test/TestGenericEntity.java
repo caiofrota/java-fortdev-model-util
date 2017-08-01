@@ -29,7 +29,6 @@ public class TestGenericEntity {
 
 	// -----
 
-	@SuppressWarnings("unlikely-arg-type")
 	@Test
 	public void equalsTheDifferentObjectShouldBeFalse() {
 		GenericEntity<Long> entity = new TestingEntity();
